@@ -1,6 +1,18 @@
 *{
-    font-family: Lato,Helvetica Neue,sans-serif;
+    font-family: "Lato","HelveticaNeue","Helvetica Neue",sans-serif;
+    
 }
+
+.nav-first-heading{
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-shadow: unset;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+
 .nav-flex-container{
     display: flex;
     flex-direction: row;
@@ -111,6 +123,7 @@ a{
     border-radius: 5px; 
     height: 38px; 
     margin-right: 42px;
+    display: block;
 }
 
 .bg-image-2nav{
