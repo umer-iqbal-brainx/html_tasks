@@ -1,0 +1,44 @@
+body{text-align: center;}
+.list-creator{
+    width: 50%;
+    height: 30px;
+}
+.tasks-div > div{
+   margin-left: 25%;
+   margin-right: auto;
+    width: 50%;
+    margin-top: 10px;
+    float: left;
+}
+.task-div > button{
+    float: right;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    margin-left: 5px;
+}
+.edit-btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.save-btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.delete-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.task-div > span{
+    float: left;
+    margin-left: 30px;
+}
+.task-div > .check-box{
+    float: left;
+}
