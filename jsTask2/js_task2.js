@@ -1,11 +1,10 @@
-function createrElement(elementName, elementType, innerHTML, elementClass, id){
-    let element1 = document.createElement(elementName);
-    element1.innerHTML = innerHTML;
-    element1.value = innerHTML;
-    element1.type = elementType;
-    element1.className = elementClass;
-    element1.id = id;
-    return element1;    
+function createrElement(elementName, elementType, innerText, buttonClassName){
+    let button = document.createElement(elementName);
+    button.innerHTML = innerText;
+    button.value = innerText;
+    button.type = elementType;
+    button.className = buttonClassName;
+    return button;    
 }
 function spanElement(innerHTMLValue){
     let spanElement = document.createElement("span");
@@ -24,21 +23,20 @@ document.getElementById("listElementCreator").addEventListener("keyup", function
         var tasksDiv1 = document.getElementById("div1");
         const tasksDiv = document.createElement("div");
         tasksDiv.className = "task-div";
-        btnDelete = createrElement("button", "submit", "Delete", "delete-btn", "deleteBtn");
-        btnEdit = createrElement("button", "submit", "Edit", "edit-btn", "editBtn");        
+        btnDelete = createrElement("button", "submit", "Delete", "delete-btn");
+        btnEdit = createrElement("button", "submit", "Edit", "edit-btn");        
         checkBox1 = checkBox();
         spanElement1 = spanElement(this.value);
         btnDelete.addEventListener("click", function(){
             this.parentNode.remove();
         });
-        btnEdit.addEventListener("click", function(){
-
+        btnEdit.addEventListener("click", function(){            
             let editField = document.createElement("input");
             editField.type = "text";
             editField.value = this.parentNode.lastChild.innerHTML;
             debugger
-            this.nextSibling.nextSibling.innerHTML = "";
-            spanElement1.appendChild(editField);
+            this.parentNode.lastChild.innerHTML = "";
+            this.parentNode.lastChild.appendChild(editField);
             this.style.display = "none";
             var btnEditThis = this;            
             btnSave = createrElement("button", "submit", "Save", "save-btn", "saveBtn");
