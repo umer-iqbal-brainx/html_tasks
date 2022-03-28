@@ -1,0 +1,32 @@
+.bg-body{
+    background-color: black;
+}
+.form-div{
+    margin: auto;
+    width: 80%;
+    background-color: white;
+    padding: 10px;
+}
+input{
+    width: 99%;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.btn-submit{
+    margin-left: 48%;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+}
+.borderColorRed{
+    border: 2px solid red;
+}
+.borderColorGreen{
+    border: 2px solid green;
+}
+.font-size-small{
+    font-size: small;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="js_task1.css">   
+    <title>JavaScript task 1</title>
+</head>
+<body class="bg-body">
+    <div class="form-div">
+        <h1 id="formName">Registration form</h1>
+        <form action=".php" class="reg-form">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" value="" placeholder="First name" ><br>
+            <div id="fnMsg" class="font-size-small"></div>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" value="" placeholder="Last name"><br>
+            <div id="lnMsg" class="font-size-small"></div>            
+            <label for="email">Notification Emails:</label><br>
+            <input type="text" id="email" name="email" value="" placeholder="user@gmail.com"><br>
+            <div id="emailMsg" class="font-size-small"></div>
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age" value="" placeholder="age between 18-150"><br>
+            <div id="ageMsg" class="font-size-small"></div>
+            <label for="cno">Contact No:</label><br>
+            <input type="text" id="contactNo" name="cno" value="" placeholder="enter 11 digits number"><br>
+            <div id="contactNoMsg" class="font-size-small"></div>
+            <label for="pass">Password:</label><br>
+            <input type="password" id="password" name="pass" value="" placeholder="***"><br>
+            <div id="passMsg" class="font-size-small"></div>
+            <label for="repass">passwordValidation:</label><br>
+            <input type="password" id="passwordValidation" name="repass" value="" placeholder="***"><br>
+            <div id="passwordValidationMsg" class="font-size-small"></div><br>
+            <input type="submit" value="Submit" class="btn-submit" id="btnSubmit">
+        </form>         
+    </div>
+    <script src="js_task1.js"></script>    
+</body>
+</html>
