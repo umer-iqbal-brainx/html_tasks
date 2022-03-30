@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="to-do-list-stimulus.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <div data-controller="toDoList">
+        <h1>To Do List</h1>
+        <input data-toDoList-target="jobs" type="text" data-action="keydown->toDoList#addJob" placeholder="What's on your Mind..." class="list-creator">  
+        <div class="tasks-div" data-toDoList-target="allTasksDiv" >               
+        </div>
+      </div>
+    <script type="module" src="toDoListStimulus.js" >       
+    </script>
+</body>
+</html>
