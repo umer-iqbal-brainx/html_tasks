@@ -21,12 +21,9 @@ import { Application, Controller } from "https://unpkg.com/@hotwired/stimulus/di
               var btnEditThis = this; 
               let btnSave = classthis.createrButton("button", "submit", "Save", "save-btn");
               btnSave.addEventListener("click", function(){    
-                console.log("jjj: ",this.parentElement.firstChild.nextElementSibling.firstChild.value );
                 let value1 = this.parentElement.firstChild.nextElementSibling.firstChild.value ;
-                console.log("value1: ",this.previousSibling)
                 this.parentElement.firstChild.nextElementSibling.innerHTML = "";
                 this.parentElement.firstChild.nextElementSibling.innerHTML = value1;
-                console.log("save parent: ", this.parentNode);
                 this.remove();
                 btnEditThis.style.display = "block";                
               });
@@ -35,11 +32,8 @@ import { Application, Controller } from "https://unpkg.com/@hotwired/stimulus/di
             let eachJobCheckBox = this.checkBox()            
             eachJobCheckBox.addEventListener("click", function(){
               if (this.checked == true){
-                  console.log("i am checked");
-                  console.log(this.nextSibling);
                   this.nextSibling.style.textDecoration = "line-through";                
               }else{
-                  console.log("i am not checked");
                   this.nextSibling.style.textDecoration = "none";
               }
             });    
