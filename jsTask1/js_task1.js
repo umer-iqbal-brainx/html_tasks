@@ -12,7 +12,6 @@ function redBorder(textField, msg, indexNo){
 function greenBorder(textField, msg, indexNo){
     textField.classList.remove("borderColorRed");
     textField.classList.add("borderColorGreen");
-    debugger;   
     textField.nextSibling.nextSibling.nextSibling.innerHTML = msg;
     textField.nextSibling.nextSibling.nextSibling.style.color = "green";
     checkArray[indexNo] = 1;
