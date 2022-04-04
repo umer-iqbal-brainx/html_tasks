@@ -40,26 +40,19 @@ document.getElementById("listElementCreator").addEventListener("keyup", function
             this.style.display = "none";
             var btnEditThis = this;            
             btnSave = createrElement("button", "submit", "Save", "save-btn", "saveBtn");
-            btnSave.addEventListener("click", function(){                
-                console.log("jjj: ",this.previousSibling.firstChild.value);
+            btnSave.addEventListener("click", function(){              
                 let value1 = this.previousSibling.firstChild.value;
-                console.log("value1: ",this.previousSibling)
                 this.previousSibling.innerHTML = "";
                 this.previousSibling.innerHTML = value1;
-                console.log("save parent: ", this.parentNode);
                 btnEditThis.style.display = "block";
                 this.remove();
             });
-            tasksDiv.appendChild(btnSave);
-            console.log(this.nextSibling.nextSibling);            
+            tasksDiv.appendChild(btnSave);          
         });
         checkBox1.addEventListener("click", function(){
             if (this.checked == true){
-                console.log("i am checked");
-                console.log(this.nextSibling);
                 this.nextSibling.style.textDecoration = "line-through";                
             }else{
-                console.log("i am not checked");
                 this.nextSibling.style.textDecoration = "none";
             }
         });
